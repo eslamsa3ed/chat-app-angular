@@ -1,5 +1,5 @@
 <!-- <input [(ngModel)]="searchText" placeholder="search text goes here"> -->
-<input type="text" class="form-control" [(ngModel)]="searchText" placeholder="search here">
+<input type="text" class="filterserach form-control" [(ngModel)]="searchText" placeholder="search here">
 
 <ul class="list-unstyled">
     <li *ngFor="let contact of Contacts | filter : searchText " class="media contact-item ">

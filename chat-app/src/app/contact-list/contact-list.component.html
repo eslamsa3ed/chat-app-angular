@@ -1,57 +1,10 @@
 <ul class="list-unstyled">
-    <li class="media contact-item active">
-      <img class="mr-3 status rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 status rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-          
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-         
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-          
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-          
-        </div>
-    </li>
-    <li class="media contact-item">
-      <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-      <div class="media-body">
-          <a class="mt-0 mb-1 usr-name" href="#"> media object</a>
-        
-        </div>
-    </li>
     
+    <li class="media contact-item" *ngFor="let contact of myContact | filter : searchText ">
+      <img class="mr-3 status rounded-circle" src="{{contact.img}}" alt="Generic placeholder image">
+      <div class="media-body">
+          <a class="mt-0 mb-1 usr-name" href="#"> {{contact.name}}</a>
+        </div>
+    </li>
+
   </ul>

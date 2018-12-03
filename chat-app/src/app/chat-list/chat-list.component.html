@@ -1,5 +1,5 @@
 <ul class="list-unstyled">
-        <li class="media chat-item active">
+        <li class="media chat-item active" >
           <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
           <div class="media-body">
               <a class="mt-0 mb-1 usr-name d-block d-md-flex" href="#"> media object</a>
@@ -8,68 +8,15 @@
             </div>
             <time>10:00 PM</time>            
         </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
+        <li class="media chat-item" *ngFor="let chat of myChats | filter : searchText ">
+          <img class="mr-3 rounded-circle" src="{{chat.img}}" alt="Generic placeholder image">
           <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
+              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> {{chat.name}}</a>
+              <p>{{chat.chats}} </p>
               <span class="badge badge-danger">4</span>
             </div>
-            <time>10:00 PM</time>            
+            <time>{{chat.time}}</time>            
         </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
-        <li class="media chat-item">
-          <img class="mr-3  rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
-        <li class="media chat-item">
-          <img class="mr-3 rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
-          <div class="media-body">
-              <a class="mt-0 mb-1 d-block d-md-flex usr-name" href="#"> media object</a>
-              <p>hello there are ttrffh hjfrhf hjrffh rfrh dhfdjh dhf </p>
-              <span class="badge badge-danger">4</span>
-            </div>
-            <time>10:00 PM</time>            
-        </li>
+        
         
       </ul>
