@@ -1,0 +1,11 @@
+<!-- <input [(ngModel)]="searchText" placeholder="search text goes here"> -->
+<input type="text" class="form-control" [(ngModel)]="searchText" placeholder="search here">
+
+<ul class="list-unstyled">
+    <li *ngFor="let contact of Contacts | filter : searchText " class="media contact-item ">
+        <img class="mr-3 status rounded-circle" src="http://placehold.it/45" alt="Generic placeholder image">
+        <div class="media-body">
+            <a class="mt-0 mb-1 usr-name" href="#"> {{ contact }}</a>
+          </div>
+      </li>
+</ul>
