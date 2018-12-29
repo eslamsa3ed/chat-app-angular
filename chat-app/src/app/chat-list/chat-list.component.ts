@@ -76,7 +76,7 @@ export class ChatListComponent implements OnInit {
         $.notify(
           {
             title: li.find(".usr-name").text(),
-            icon: "fa fa-flag fa-stack-1x fa-inverse",
+            icon: "fa fa-commenting fa-stack-1x fa-inverse",
             message: li.find(".last-msg").text()
           },
           {
