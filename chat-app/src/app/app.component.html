@@ -1,112 +1,136 @@
-
-  <!-- main window -->
-    <div class="main">
-      <!-- app-header -->
-        <div class="row app-head">
-          <div class="col-4 window-action d-sm-flex align-items-center  d-none">
-              <div class="head-buttons ">
-                  <div class="closse">
-                    <a class="closebutton" href="#"><span><strong>x</strong></span></a>
-                    <!-- close button link -->
-                  </div>
-                  <div class="minimize">
-                    <a class="minimizebutton" href="#"><span><strong>-</strong></span></a>
-                    <!-- minimize button link -->
-                  </div>
-                  <div class="zoom">
-                    <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
-                    <!-- zoom button link -->
-                  </div>
-                </div>
-          </div>
-           <!-- mobile collabse trriger -->
-           <div class="mobile-trig col-1 d-flex align-items-center d-md-none">
-              <a href="#list-chat" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="fa fa-ellipsis-v"></i></a>
-            </div>
-          <div class="col-10 col-sm-8 head-titel  d-flex align-items-center">
-            <div class="media d-flex align-items-center col">
-              <img class="mr-3 rounded-circle" src="http://placehold.it/40" alt="...">  
-              <span>Media heading</span>
-            </div>
-            <div class="col-1 setting"><a href="#"><i class="fa fa-cog"></i></a></div>
-          </div>
-         
+<!-- main window -->
+<div class="main">
+  <!-- app-header -->
+  <div class="row app-head">
+    <div
+      class="col-4 window-action d-sm-flex align-items-center d-sm-none  d-none"
+    >
+      <div class="head-buttons ">
+        <div class="closse">
+          <a class="closebutton" href="#"
+            ><span><strong>x</strong></span></a
+          >
+          <!-- close button link -->
         </div>
-       <!--end app-header -->
-
-       <div class="app-body row" >
-          <!-- list -->
-          <div class="col-md-4 col-12 users-list collapse" id="list-chat">
-              <ul class="nav nav-tabs " id="myTab" role="tablist">
-                <li class="nav-item ">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-commenting"></i></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-user"></i></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fa fa-search"></i></a>
-                </li>
-              </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="chat-list">
-                      <app-chat-list></app-chat-list>
-                      </div>
-                  </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div class="chat-list">
-                          <app-contact-list></app-contact-list>
-                      </div>
-                  </div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                      <div class="chat-list">
-                         <app-chat-search></app-chat-search>
-                      </div>
-                  </div>
-                </div>
-           </div>          
-           <!-- /list -->
-
-           <!-- chat area -->
-           <div class="col-12 col-md-8 chat-area">
-             <!-- Messages -->
-            <app-chat-box></app-chat-box>
-            <!--  /Messages -->
-            
-
-            <!-- chat-input -->
-              <div class="chat-input  d-flex align-items-center">
-                  <div class="col-2 col-sm-1">
-                    <i class="fa fa-paperclip fa-rotate-180"></i>
-                  </div>
-                  <div class="col-11 form-container">
-                      <form>
-                        <div class="form-row">
-                          <div class="col-8 col-sm-10">
-                              <div class="form-group mb-2">
-                                  <input type="text"  class="form-control-plaintext" placeholder="Enter your message"  value="">
-                                </div>
-                          </div>
-                          <div class="col-3 col-sm-2">
-                              <button type="submit" class="btn btn-main mb-2">Send</button>
-                          </div>
-                        </div>
-                          
-                        </form>
-                  </div>
-              </div>
-            <!-- /chat-input -->
-
-           </div>
-           <!-- /chat area -->
-
-           
-
-       </div>
-      <!-- app-body -->
-      
+        <div class="minimize">
+          <a class="minimizebutton" href="#"
+            ><span><strong>-</strong></span></a
+          >
+          <!-- minimize button link -->
+        </div>
+        <div class="zoom">
+          <a class="zoombutton" href="#"
+            ><span><strong>+</strong></span></a
+          >
+          <!-- zoom button link -->
+        </div>
       </div>
-  <!-- /main window -->
+    </div>
+    <!-- mobile collabse trriger -->
+    <div class="mobile-trig col-1 d-flex align-items-center d-md-none">
+      <a
+        href="#list-chat"
+        data-toggle="collapse"
+        role="button"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample1"
+        ><i class="fa fa-ellipsis-v"></i
+      ></a>
+    </div>
+    <div class="col-10 col-sm-8 head-titel  d-flex align-items-center">
+      <div class="media d-flex align-items-center col">
+        <img
+          class="mr-3 rounded-circle"
+          src="http://placehold.it/40"
+          alt="..."
+        />
+        <span>Media heading</span>
+      </div>
+      <div class="col-1 setting">
+        <a href="#"><i class="fa fa-cog"></i></a>
+      </div>
+    </div>
+  </div>
+  <!--end app-header -->
 
+  <div class="app-body row">
+    <!-- list -->
+    <div class="col-md-4 col-12 users-list collapse" id="list-chat">
+      <ul class="nav nav-tabs " id="myTab" role="tablist">
+        <li class="nav-item ">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            ><i class="fa fa-commenting"></i
+          ></a>
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            ><i class="fa fa-user"></i
+          ></a>
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            ><i class="fa fa-search"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="chat-list"><app-chat-list></app-chat-list></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <div class="chat-list"><app-contact-list></app-contact-list></div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          <div class="chat-list"><app-chat-search></app-chat-search></div>
+        </div>
+      </div>
+    </div>
+    <!-- /list -->
 
+    <!-- chat area -->
+    <div class="col-12 col-md-8 chat-area">
+      <!-- Messages -->
+      <app-chat-box></app-chat-box>
+      <!--  /Messages -->
+    </div>
+    <!-- /chat area -->
+  </div>
+  <!-- app-body -->
+</div>
+<!-- /main window -->

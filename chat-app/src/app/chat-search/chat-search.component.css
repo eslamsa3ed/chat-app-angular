@@ -1,2 +1,14 @@
-.list-unstyled{margin-top: 35px;}
-.filterserach{position: fixed;width:auto;}
+.list-unstyled {
+  margin-top: 35px;
+}
+.filterserach {
+  position: absolute;
+  background: #e8e9ea;
+  border: 0px;
+  border-radius: 0px;
+  margin-top: -3px;
+}
+.search-list {
+  height: 100%;
+  overflow-y: auto;
+}
